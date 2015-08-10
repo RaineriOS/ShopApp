@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomNavigationViewController.h"
 
-@interface BKNavigationCtr : UINavigationController<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
+@interface BKNavigationCtr : CustomNavigationViewController<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @end

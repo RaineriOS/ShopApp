@@ -1,0 +1,41 @@
+//
+//  BaseViewController.h
+//  HotNewsApp
+//
+//  Created by shikee_app03 on 14-12-2.
+//  Copyright (c) 2014年 shikee_app03. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+//typedef enum
+//{
+//    MoveStateLeft=1,
+//    MoveStateRight,
+//}MoveState;
+
+@protocol PanDelegate <NSObject>
+
+-(void)moveWithX:(double)x andMaxMoveX:(double)moveMaxX andAnima:(BOOL)anima;
+
+@end
+
+typedef enum
+{
+    PanStateNone=1,
+    PanStateRight,
+}PanState;
+
+@interface PanViewController : UITabBarController<UIGestureRecognizerDelegate>
+{
+//    MoveState _currMoveState;
+    
+    
+    PanState _currPanState;
+    UIView *_maskView;
+    UIView *_currCtrView;
+    UIViewController *_leftViewCtr;
+}
+@property(nonatomic,assign) id<PanDelegate> panDelegate;
+-(void)reset;
+-(void)setLeftViewController:(UIViewController *)ctr withDelegate:(id)___delegate;
+@end

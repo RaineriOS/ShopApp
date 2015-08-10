@@ -18,6 +18,8 @@
 #import "BKToolKit.h"
 #import "Toast.h"
 #import "XLog.h"
+#import "NZLabel.h"
+#import "UICustomLineLabel.h"
 
 #define BKDeviceWidth ([UIScreen mainScreen].bounds.size.width)
 #define BKDeviceHeight ([UIScreen mainScreen].bounds.size.height-StatusBarHeight)
