@@ -13,6 +13,7 @@
 #import "UIView+Helper.h"
 #import "BKNavigationBar.h"
 #import "BKBaseViewController.h"
+#import "BKNavigationCtr.h"
 #import "BKHttpRequest.h"
 #import "BKToolKit.h"
 #import "Toast.h"
@@ -48,6 +49,7 @@
 //颜色板
 #define COLOR_TEXT_YELL   [UIColor colorWithRed:88.0f/255.0f green:44.0f/255.0f blue:31.0f/255.0f alpha:1.0f]
 #define COLOR__RED        UIColorFromRGB(0xE45252)  //导航栏的红色
+#define COLOR_MAIN        UIColorFromRGB(0x0066B3)  //主题颜色
 #define COLOR_LINE        UIColorFromRGB(0xd1d1d1)  //线条色
 #define COLOR_HS          UIColorFromRGB(0x999999)  //灰色
 #define COLOR_BG          UIColorFromRGB(0xfaf7f7)  //灰色

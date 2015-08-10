@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  ShopApp
 //
 //  Created by shikee_app03 on 15/8/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : BKBaseViewController
-
+@interface HomeViewController : BKBaseViewController
 
 @end
-

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#define BKNavigationBarBackButtonDidSelectedNotification @"BKNavigationBarBackButtonDidSelectedNotification"
 
 @interface BKNavigationBar : UIView
 {

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    
+    HomeViewController *homeVc=[[HomeViewController alloc]init];
+    BKNavigationCtr *navCtr=[[BKNavigationCtr alloc]initWithRootViewController:homeVc];
+    navCtr.navigationBarHidden=YES;
+    self.window.rootViewController=navCtr;
     return YES;
 }
 

@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         self.frame=CGRectMake(0, 0,BKDeviceWidth,64-StatusBarHeight);
-        self.backgroundColor=[UIColor blueColor];
+        self.backgroundColor=COLOR_MAIN;
         
         UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 20-StatusBarHeight, self.getWidth, 44)];
         titleLabel.text=title;
@@ -31,6 +31,7 @@
         _backBtn.contentHorizontalAlignment=UIControlContentHorizontalAlignmentLeft;
         _backBtn.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
         _backBtn.tag=10086;//要隐藏这个按钮直接搜这个tag来隐藏
+        [_backBtn addTarget:self action:@selector(clickBackBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         UIImage *img=[UIImage imageNamed:@"Back.png"];
         [_backBtn setImage:img forState:UIControlStateNormal];
         
@@ -53,4 +54,10 @@
     }
     return _backBtn;
 }
+
+-(void)clickBackBtnAction:(UIButton *)sender
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:BKNavigationBarBackButtonDidSelectedNotification object:nil];
+}
+
 @end

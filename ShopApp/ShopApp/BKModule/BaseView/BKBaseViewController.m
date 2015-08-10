@@ -9,6 +9,29 @@
 #import "BKBaseViewController.h"
 
 @implementation BKBaseViewController
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+#endif
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;//关闭自动布局
+    [self registerFrameworkNotification];
+
+}
+
+-(void)registerFrameworkNotification
+{
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(clickBackBtnAction) name:BKNavigationBarBackButtonDidSelectedNotification object:nil];//导航条返回按钮被点击时会发送该通知s
+}
+
 +(id)initWithXib
 {
     NSString *objName=[self getClassName];
@@ -24,18 +47,15 @@
     return navBar;
 }
 
+-(IBAction)clickBackBtnAction
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 -(IBAction)backView:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
--(void)viewDidLoad
-{
-    [super viewDidLoad];
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.extendedLayoutIncludesOpaqueBars = NO;
-#endif
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;//关闭自动布局
-}
+
 @end
