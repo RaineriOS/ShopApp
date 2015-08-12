@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "PSCollectionView.h"
 #import "GoodsPSCell.h"
+#import "GoodsDetilViewController.h"
 
 @interface HomeViewController ()<PSCollectionViewDataSource,PSCollectionViewDelegate,UIScrollViewDelegate>
 {
@@ -39,6 +40,12 @@
 #pragma makr - Delegate
 
 #pragma mark PSCollectionDelegate
+- (void)collectionView:(PSCollectionView *)collectionView didSelectCell:(PSCollectionViewCell *)cell atIndex:(NSInteger)index
+{
+    GoodsDetilViewController *vc=[[GoodsDetilViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (NSInteger)numberOfRowsInCollectionView:(PSCollectionView *)collectionView
 {
     return self.collectionData.count;

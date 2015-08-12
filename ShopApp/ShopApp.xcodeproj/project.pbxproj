@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		509A90C11B7B337700D6F5BB /* BKNavigationCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 509A90C01B7B337700D6F5BB /* BKNavigationCtr.m */; };
 		50A49AAF1B784E350065B182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49AAE1B784E350065B182 /* main.m */; };
 		50A49AB21B784E350065B182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49AB11B784E350065B182 /* AppDelegate.m */; };
 		50A49AB81B784E350065B182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A49AB61B784E350065B182 /* Main.storyboard */; };
@@ -53,7 +54,6 @@
 		50A49EF61B787DEC0065B182 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49EC41B787DEC0065B182 /* UIImageView+WebCache.m */; };
 		50A49EF71B787DEC0065B182 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49EC71B787DEC0065B182 /* Toast.m */; };
 		50A49EFD1B787F090065B182 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A49EFC1B787F090065B182 /* libz.dylib */; };
-		50A49F011B7883880065B182 /* BKNavigationCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49F001B7883880065B182 /* BKNavigationCtr.m */; };
 		50A49F041B7883B60065B182 /* BKNavigationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49F031B7883B60065B182 /* BKNavigationAnimation.m */; };
 		50A49F101B788D5D0065B182 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 50A49F0A1B788D5D0065B182 /* LICENSE */; };
 		50A49F111B788D5D0065B182 /* PSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49F0C1B788D5D0065B182 /* PSCollectionView.m */; };
@@ -63,6 +63,8 @@
 		50B31A691B789DF700FFBB2B /* UICustomLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A651B789DF700FFBB2B /* UICustomLineLabel.m */; };
 		50B31A6C1B78AE5D00FFBB2B /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A6B1B78AE5D00FFBB2B /* CustomNavigationViewController.m */; };
 		50B31A6F1B78AE7200FFBB2B /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A6E1B78AE7200FFBB2B /* PanViewController.m */; };
+		50B31A721B79794400FFBB2B /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A711B79794400FFBB2B /* LeftViewController.m */; };
+		50B31A761B797E1700FFBB2B /* GoodsDetilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */; };
 		50FBDC1C1B7893DF001800DF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDC1B1B7893DF001800DF /* HomeViewController.m */; };
 		50FBDC1F1B78941F001800DF /* GoodsPSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDC1E1B78941F001800DF /* GoodsPSCell.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		509A90BF1B7B337700D6F5BB /* BKNavigationCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKNavigationCtr.h; sourceTree = "<group>"; };
+		509A90C01B7B337700D6F5BB /* BKNavigationCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKNavigationCtr.m; sourceTree = "<group>"; };
 		50A49AA91B784E350065B182 /* ShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A49AAD1B784E350065B182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50A49AAE1B784E350065B182 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -173,8 +177,6 @@
 		50A49EC61B787DEC0065B182 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
 		50A49EC71B787DEC0065B182 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		50A49EFC1B787F090065B182 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		50A49EFF1B7883880065B182 /* BKNavigationCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKNavigationCtr.h; sourceTree = "<group>"; };
-		50A49F001B7883880065B182 /* BKNavigationCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKNavigationCtr.m; sourceTree = "<group>"; };
 		50A49F021B7883B60065B182 /* BKNavigationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKNavigationAnimation.h; sourceTree = "<group>"; };
 		50A49F031B7883B60065B182 /* BKNavigationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKNavigationAnimation.m; sourceTree = "<group>"; };
 		50A49F0A1B788D5D0065B182 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -191,6 +193,10 @@
 		50B31A6B1B78AE5D00FFBB2B /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
 		50B31A6D1B78AE7200FFBB2B /* PanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
 		50B31A6E1B78AE7200FFBB2B /* PanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		50B31A701B79794400FFBB2B /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		50B31A711B79794400FFBB2B /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		50B31A741B797E1700FFBB2B /* GoodsDetilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetilViewController.h; sourceTree = "<group>"; };
+		50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetilViewController.m; sourceTree = "<group>"; };
 		50FBDC1A1B7893DF001800DF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		50FBDC1B1B7893DF001800DF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		50FBDC1D1B78941F001800DF /* GoodsPSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsPSCell.h; sourceTree = "<group>"; };
@@ -293,6 +299,8 @@
 		50A49E671B787DEC0065B182 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				509A90BF1B7B337700D6F5BB /* BKNavigationCtr.h */,
+				509A90C01B7B337700D6F5BB /* BKNavigationCtr.m */,
 				50B31A6D1B78AE7200FFBB2B /* PanViewController.h */,
 				50B31A6E1B78AE7200FFBB2B /* PanViewController.m */,
 				50B31A6A1B78AE5D00FFBB2B /* CustomNavigationViewController.h */,
@@ -309,8 +317,6 @@
 			children = (
 				50A49F021B7883B60065B182 /* BKNavigationAnimation.h */,
 				50A49F031B7883B60065B182 /* BKNavigationAnimation.m */,
-				50A49EFF1B7883880065B182 /* BKNavigationCtr.h */,
-				50A49F001B7883880065B182 /* BKNavigationCtr.m */,
 				50A49E6B1B787DEC0065B182 /* BKNavigationBar.h */,
 				50A49E6C1B787DEC0065B182 /* BKNavigationBar.m */,
 			);
@@ -491,6 +497,7 @@
 		50A49F051B7886440065B182 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50B31A731B797E0800FFBB2B /* Detil */,
 				50FBDC191B7893DF001800DF /* Home */,
 			);
 			path = Views;
@@ -520,6 +527,15 @@
 			path = NZLabel;
 			sourceTree = "<group>";
 		};
+		50B31A731B797E0800FFBB2B /* Detil */ = {
+			isa = PBXGroup;
+			children = (
+				50B31A741B797E1700FFBB2B /* GoodsDetilViewController.h */,
+				50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */,
+			);
+			path = Detil;
+			sourceTree = "<group>";
+		};
 		50FBDC191B7893DF001800DF /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,6 +543,8 @@
 				50FBDC1B1B7893DF001800DF /* HomeViewController.m */,
 				50FBDC1D1B78941F001800DF /* GoodsPSCell.h */,
 				50FBDC1E1B78941F001800DF /* GoodsPSCell.m */,
+				50B31A701B79794400FFBB2B /* LeftViewController.h */,
+				50B31A711B79794400FFBB2B /* LeftViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -649,6 +667,7 @@
 				50A49F111B788D5D0065B182 /* PSCollectionView.m in Sources */,
 				50A49ED61B787DEC0065B182 /* UIView+Helper.m in Sources */,
 				50A49EE11B787DEC0065B182 /* ASIFormDataRequest.m in Sources */,
+				50B31A721B79794400FFBB2B /* LeftViewController.m in Sources */,
 				50A49EF51B787DEC0065B182 /* UIImageView+HighlightedWebCache.m in Sources */,
 				50A49ED11B787DEC0065B182 /* BKRuntimeViewController.m in Sources */,
 				50A49EE41B787DEC0065B182 /* ASINetworkQueue.m in Sources */,
@@ -667,7 +686,6 @@
 				50A49ED71B787DEC0065B182 /* ClientSocket.m in Sources */,
 				50A49ED01B787DEC0065B182 /* BKNavigationBar.m in Sources */,
 				50B31A681B789DF700FFBB2B /* NZLabel.m in Sources */,
-				50A49F011B7883880065B182 /* BKNavigationCtr.m in Sources */,
 				50A49ED31B787DEC0065B182 /* BKToolKit.m in Sources */,
 				50A49EF71B787DEC0065B182 /* Toast.m in Sources */,
 				50A49F041B7883B60065B182 /* BKNavigationAnimation.m in Sources */,
@@ -680,9 +698,11 @@
 				50A49EE21B787DEC0065B182 /* ASIHTTPRequest.m in Sources */,
 				50A49AAF1B784E350065B182 /* main.m in Sources */,
 				50A49ED51B787DEC0065B182 /* NSString+Helper.m in Sources */,
+				509A90C11B7B337700D6F5BB /* BKNavigationCtr.m in Sources */,
 				50A49EE51B787DEC0065B182 /* XLog.m in Sources */,
 				50A49F131B788D5D0065B182 /* README.md in Sources */,
 				50A49EE71B787DEC0065B182 /* MKAnnotationView+WebCache.m in Sources */,
+				50B31A761B797E1700FFBB2B /* GoodsDetilViewController.m in Sources */,
 				50A49EE31B787DEC0065B182 /* ASIInputStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

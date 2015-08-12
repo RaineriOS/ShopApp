@@ -35,7 +35,7 @@ int maxX=250;
     [self.view addSubview:_maskView];
     [_maskView addGestureRecognizer:tapGesture];
     
-    _currView=[[UIApplication sharedApplication].delegate window].rootViewController.view;
+    
 //    _currView.layer.shadowPath = [UIBezierPath bezierPathWithRect:_currView.frame].CGPath;
 //    _currView.layer.shadowOffset = CGSizeMake(0, 3); //设置阴影的偏移量
 //    _currView.layer.shadowRadius = 10.0;  //设置阴影的半径
@@ -46,6 +46,7 @@ int maxX=250;
 
 -(void)setLeftViewController:(UIViewController *)ctr withDelegate:(id)___delegate
 {
+    _currView=[[[[[UIApplication sharedApplication] delegate] window] rootViewController] view];
     _leftViewCtr=ctr;
     _leftViewCtr.view.tag=999;
     self.panDelegate=___delegate;
@@ -192,11 +193,14 @@ int maxX=250;
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    
-    CGPoint point=[gestureRecognizer locationInView:_currView];
-    if(point.x>30&&_currPanState!=PanStateRight){
+    if(self.childViewControllers.count!=1){
         return NO;
     }
+    
+//    CGPoint point=[gestureRecognizer locationInView:_currView];
+//    if(point.x>30){//&&_currPanState!=PanStateRight
+//        return NO;
+//    }
     return YES;
 }
 

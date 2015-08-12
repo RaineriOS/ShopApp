@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+#import "LeftViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +24,14 @@
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
+    
+    
     HomeViewController *homeVc=[[HomeViewController alloc]init];
     BKNavigationCtr *navCtr=[[BKNavigationCtr alloc]initWithRootViewController:homeVc];
     navCtr.navigationBarHidden=YES;
     self.window.rootViewController=navCtr;
+    LeftViewController *leftVc=[[LeftViewController alloc]init];
+    [navCtr setLeftViewController:leftVc withDelegate:leftVc];
     return YES;
 }
 

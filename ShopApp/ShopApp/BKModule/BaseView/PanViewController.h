@@ -25,7 +25,7 @@ typedef enum
     PanStateRight,
 }PanState;
 
-@interface PanViewController : UITabBarController<UIGestureRecognizerDelegate>
+@interface PanViewController : UINavigationController<UIGestureRecognizerDelegate>
 {
 //    MoveState _currMoveState;
     

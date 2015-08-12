@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomNavigationViewController.h"
+#import "PanViewController.h"
 
-@interface BKNavigationCtr : CustomNavigationViewController<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
+@interface BKNavigationCtr : PanViewController<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @end
