@@ -14,6 +14,7 @@
 {
     UIPercentDrivenInteractiveTransition *_popInteractionController;
 }
+@property(nonatomic,strong) UIView *bkctrMaskView;
 
 @end
 
@@ -45,6 +46,7 @@
     _panGesutre=[[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePanGesutre:)];
     _panGesutre.edges = UIRectEdgeLeft;
     [self.view addGestureRecognizer:_panGesutre];
+    
 }
 
 
@@ -104,14 +106,21 @@
 
 
 
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
+#pragma mark InitVar
+-(UIView *)bkctrMaskView
+{
+  if(!_bkctrMaskView)
+  {
+      _bkctrMaskView=[[UIView alloc]initWithFrame:self.view.bounds];
+      _bkctrMaskView.backgroundColor=[UIColor blackColor];
+  }
+    return _bkctrMaskView;
+}
 
 @end

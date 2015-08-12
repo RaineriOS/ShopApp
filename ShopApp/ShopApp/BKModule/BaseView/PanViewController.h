@@ -38,4 +38,5 @@ typedef enum
 @property(nonatomic,assign) id<PanDelegate> panDelegate;
 -(void)reset;
 -(void)setLeftViewController:(UIViewController *)ctr withDelegate:(id)___delegate;
+-(UIViewController *)getLeftViewController;
 @end

@@ -27,14 +27,14 @@
     
     if(_animationType==AnimationTypePush){
         [container insertSubview:toViewController.view belowSubview:fromViewController.view];
-        toViewController.view.alpha = 0;
+//        toViewController.view.alpha = 0;
         
         toViewController.view.transform=CGAffineTransformMakeScale(0.8, 0.8);
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
                 toViewController.view.transform=CGAffineTransformMakeScale(1, 1);
                 [fromViewController.view setPointX:-fromViewController.view.getWidth];
-                toViewController.view.alpha = 1;
+//                toViewController.view.alpha = 1;
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
         }];
@@ -51,15 +51,15 @@
         
     }else {
         [container insertSubview:toViewController.view atIndex:999];
-        fromViewController.view.alpha = 1;
+//        fromViewController.view.alpha = 1;
         fromViewController.view.transform = CGAffineTransformIdentity;
         [toViewController.view setPointX:-toViewController.view.getWidth];
         
        [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-               fromViewController.view.alpha=0;
+//               fromViewController.view.alpha=0;
                fromViewController.view.transform=CGAffineTransformMakeScale(0.8, 0.8);
                [toViewController.view setPointX:0];
-               toViewController.view.alpha = 1;
+//               toViewController.view.alpha = 1;
        } completion:^(BOOL finished) {
            [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
        }];

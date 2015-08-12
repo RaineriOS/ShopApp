@@ -541,10 +541,10 @@
 			children = (
 				50FBDC1A1B7893DF001800DF /* HomeViewController.h */,
 				50FBDC1B1B7893DF001800DF /* HomeViewController.m */,
-				50FBDC1D1B78941F001800DF /* GoodsPSCell.h */,
-				50FBDC1E1B78941F001800DF /* GoodsPSCell.m */,
 				50B31A701B79794400FFBB2B /* LeftViewController.h */,
 				50B31A711B79794400FFBB2B /* LeftViewController.m */,
+				50FBDC1D1B78941F001800DF /* GoodsPSCell.h */,
+				50FBDC1E1B78941F001800DF /* GoodsPSCell.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";

@@ -15,7 +15,7 @@
 #import "BKConfig.h"
 
 
-
+#define LoadingIMG [UIImage imageNamed:@"loading"]
 #endif
 
 /*

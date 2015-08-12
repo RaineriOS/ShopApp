@@ -56,6 +56,11 @@ int maxX=250;
     
 }
 
+-(UIViewController *)getLeftViewController
+{
+    return _leftViewCtr;
+}
+
 -(void)reset
 {
     [self touchView:nil];

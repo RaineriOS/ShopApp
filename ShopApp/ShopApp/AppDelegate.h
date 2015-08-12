@@ -1,10 +1,10 @@
-//
-//  AppDelegate.h
-//  ShopApp
-//
-//  Created by shikee_app03 on 15/8/10.
-//  Copyright (c) 2015年 shikee_app03. All rights reserved.
-//
+/**
+ ==================================================
+ 描述:AppDelegate
+ 开发:BigKiang
+ 时间:2015-08-12 15:59:48
+ ==================================================
+ */
 
 #import <UIKit/UIKit.h>
 
