@@ -14,7 +14,10 @@
     UIButton *_backBtn;
 }
 
+@property(nonatomic,strong) UIButton * rightBtn;
+
 -(UIView*)initWithNavTitle:(NSString *)title;
 -(UIButton *)getBackButton;
+-(void)setTitleWithStr:(NSString *)title;
 
 @end

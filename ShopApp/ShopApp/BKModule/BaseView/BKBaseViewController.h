@@ -12,4 +12,5 @@
 +(id)initWithXib;
 -(id)getNavigationBarWithTitle:(NSString *)title;
 -(IBAction)backView:(id)sender;
+-(void)push:(NSString *)className;
 @end

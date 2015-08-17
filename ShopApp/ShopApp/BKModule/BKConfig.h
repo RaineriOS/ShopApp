@@ -22,6 +22,10 @@
 #import "UICustomLineLabel.h"
 #import "UIImageView+WebCache.h"
 
+// custom
+
+#import "LoginModel.h"
+
 #define BKDeviceWidth ([UIScreen mainScreen].bounds.size.width)
 #define BKDeviceHeight ([UIScreen mainScreen].bounds.size.height-StatusBarHeight)
 #ifdef DEBUG

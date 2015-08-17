@@ -10,10 +10,6 @@
 
 @implementation BKBaseViewController
 
--(void)dealloc
-{
-    [[NSNotificationCenter defaultCenter]removeObserver:self];
-}
 
 -(void)viewDidLoad
 {
@@ -23,13 +19,21 @@
     self.extendedLayoutIncludesOpaqueBars = NO;
 #endif
     self.view.translatesAutoresizingMaskIntoConstraints = NO;//关闭自动布局
-    [self registerFrameworkNotification];
 
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
 }
 
 -(void)registerFrameworkNotification
 {
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(clickBackBtnAction) name:BKNavigationBarBackButtonDidSelectedNotification object:nil];//导航条返回按钮被点击时会发送该通知s
 }
 
 +(id)initWithXib
@@ -44,12 +48,34 @@
     BKNavigationBar *navBar=[[BKNavigationBar alloc]initWithNavTitle:title];
     UIButton *backButton=navBar.getBackButton;
     [backButton addTarget:self action:@selector(backView:) forControlEvents:UIControlEventTouchUpInside];
+    [navBar.rightBtn addTarget:self action:@selector(shopingCartAction:) forControlEvents:UIControlEventTouchUpInside];
+    
     return navBar;
 }
+
+#pragma mark- InitVar
 
 -(IBAction)clickBackBtnAction
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)shopingCartAction:(UIButton *)sender
+{
+    if([LoginModel shared].isLogin)
+    {
+        ALERT_SHOW(@"请先登录");
+    }else {
+        [self push:@"ShopingCartViewController"];
+    }
+}
+
+-(void)push:(NSString *)className
+{
+    Class tempClass = NSClassFromString(className);
+    if(!tempClass) return;
+    UIViewController * tempObj = [[tempClass alloc] init];
+    [self.navigationController pushViewController:tempObj animated:YES];
 }
 
 -(IBAction)backView:(id)sender

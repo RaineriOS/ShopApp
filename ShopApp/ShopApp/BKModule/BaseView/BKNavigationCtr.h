@@ -10,5 +10,4 @@
 #import "PanViewController.h"
 
 @interface BKNavigationCtr : PanViewController<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
-
 @end

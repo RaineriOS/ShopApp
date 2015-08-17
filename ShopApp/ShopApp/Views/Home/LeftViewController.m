@@ -8,6 +8,9 @@
 
 
 #import "LeftViewController.h"
+#import "ShopingCartViewController.h"
+#import "MoerViewController.h"
+#import "LoginViewController.h"
 
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -19,6 +22,7 @@
 @property(nonatomic,strong) UIView *menuHeaderView;
 @property(nonatomic,strong) UIView *menuFooterView;
 @property(nonatomic,strong) UILabel *userNameLabel;
+@property(nonatomic,weak) BKNavigationCtr *navCtr;
 
 @property(nonatomic,strong) NSMutableArray *menuItemsData;
 
@@ -39,6 +43,21 @@
     
 }
 
+
+
+#pragma mark- PrivateMethod
+-(void)push:(UIViewController *)vc
+{
+    [self.navCtr reset];
+    [self.navCtr pushViewController:vc animated:NO];
+}
+
+#pragma mark- EventMethod
+-(void)moerAction:(UIButton *)sender
+{
+    MoerViewController *vc=[[MoerViewController alloc]init];
+    [self push:vc];
+}
 
 
 #pragma mark- ViewDelegate
@@ -74,6 +93,31 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.menuItemsData.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(![LoginModel shared].isLogin){
+        [self push:[LoginViewController new]];
+        ALERT_SHOW(@"请您先登录");
+        return;
+    }
+    
+    NSString *cellTitle=[self.menuItemsData objectAtIndex:indexPath.row];
+    if([cellTitle isEqualToString:@"我的订单"]){
+        [self.navCtr reset];
+        ALERT_SHOW(@"我的订单");
+    }else if([cellTitle isEqualToString:@"我的地址"]){
+        [self.navCtr reset];
+        ALERT_SHOW(@"我的地址");
+    }else if([cellTitle isEqualToString:@"我的钱包"]){
+        [self.navCtr reset];
+        ALERT_SHOW(@"我的钱包");
+    }else if([cellTitle isEqualToString:@"购物车"]){
+        ShopingCartViewController *vc=[[ShopingCartViewController alloc]init];
+        [self push:vc];
+//        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -149,6 +193,7 @@
       btn1.backgroundColor=[UIColor clearColor];
       btn1.titleLabel.font=[UIFont systemFontOfSize:20];
       [btn1 setTitle:@"更多" forState:0];
+      [btn1 addTarget:self action:@selector(moerAction:) forControlEvents:UIControlEventTouchUpInside];
       [_menuFooterView addSubview:btn1];
       
       UIButton *btn2=[[UIButton alloc]initWithFrame:CGRectMake(btn1.getEndPointX, 0, _menuFooterView.getWidth/2.0f, _menuFooterView.getHeight)];
@@ -181,7 +226,14 @@
     return _userNameLabel;
 }
 
-
+-(BKNavigationCtr *)navCtr
+{
+    if(_navCtr==nil){
+        UIWindow *win=(UIWindow*)[self.view superview];
+        _navCtr=(BKNavigationCtr*)win.rootViewController;
+    }
+    return _navCtr;
+}
 
 
 -(NSMutableArray *)menuItemsData
@@ -191,7 +243,7 @@
         [_menuItemsData addObject:@"我的订单"];
         [_menuItemsData addObject:@"我的地址"];
         [_menuItemsData addObject:@"我的钱包"];
-        [_menuItemsData addObject:@"购物卡车"];
+        [_menuItemsData addObject:@"购物车"];
         
     }
     return _menuItemsData;

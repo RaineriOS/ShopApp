@@ -23,6 +23,7 @@
         titleLabel.textAlignment=NSTextAlignmentCenter;
         titleLabel.backgroundColor=[UIColor clearColor];
         titleLabel.textColor=[UIColor whiteColor];
+        titleLabel.tag=1001;
         
         [self addSubview:titleLabel];
         
@@ -31,19 +32,33 @@
         _backBtn.contentHorizontalAlignment=UIControlContentHorizontalAlignmentLeft;
         _backBtn.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
         _backBtn.tag=10086;//要隐藏这个按钮直接搜这个tag来隐藏
-        [_backBtn addTarget:self action:@selector(clickBackBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [_backBtn addTarget:self action:@selector(clickBackBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         UIImage *img=[UIImage imageNamed:@"Back.png"];
         [_backBtn setImage:img forState:UIControlStateNormal];
         
         [self addSubview:_backBtn];
         
-        //    UIView *lineView=[[UIView alloc]initWithFrame:CGRectMake(0, view.getHeight-0.5, kDeviceWidth, 0.5)];
-        //    lineView.backgroundColor=COLOR_LINE;
-        //    [view addSubview:lineView];
+        [self addSubview:self.rightBtn];
+        
+        UIView *lineView=[[UIView alloc]initWithFrame:CGRectMake(0, self.getHeight-0.5, self.getWidth, 0.5)];
+        lineView.backgroundColor=COLOR_LINE;
+        [self addSubview:lineView];
         return self;
     }
-    return nil;
+    return self;
     
+}
+
+
+/**
+ 
+ 设置标题
+ 
+ */
+-(void)setTitleWithStr:(NSString *)title
+{
+   UILabel *textLabel=(UILabel*)[self viewWithTag:1001];
+   textLabel.text=title;
 }
 
 -(UIButton *)getBackButton
@@ -55,9 +70,28 @@
     return _backBtn;
 }
 
+#pragma mark- EventMethod
+
 -(void)clickBackBtnAction:(UIButton *)sender
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:BKNavigationBarBackButtonDidSelectedNotification object:nil];
+}
+
+
+#pragma mark- InitVar
+
+-(UIButton *)rightBtn
+{
+    if(!_rightBtn)
+    {
+        _rightBtn=[[UIButton alloc]initWithFrame:CGRectMake(0, 20-StatusBarHeight, 60, 44)];
+        [_rightBtn setPointX:self.getWidth-8-_rightBtn.getWidth];
+        _rightBtn.backgroundColor=[UIColor clearColor];
+        _rightBtn.tag=10087;
+        _rightBtn.hidden=YES;
+        [_rightBtn setImage:[UIImage imageNamed:@"ShoppingCart"] forState:0];
+    }
+    return _rightBtn;
 }
 
 @end

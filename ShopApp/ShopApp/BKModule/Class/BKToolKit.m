@@ -28,6 +28,46 @@
 }
 
 
++(CGSize)getAutoSizeWithFontSize:(double)fontSize andText:(NSString *)text andWeight:(double)weight
+{
+    UILabel *tempLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, weight, 0)];
+    tempLabel.font=[UIFont systemFontOfSize:fontSize];
+    tempLabel.text=text;
+    
+    return [self getLabelAutoWeightByLabel:tempLabel].size;
+//    CGSize size=CGSizeMake(weight, MAXFLOAT);
+//    size=[text sizeWithFont:[UIFont systemFontOfSize:fontSize] constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
+//    return CGSizeMake(size.width, size.height);
+}
+
+
++(CGRect)getLabelAutoWeightByLabel:(UILabel*)label
+{
+    if(!label){
+        BKLog(@"传来的label为空!");
+        return CGRectZero;
+    }
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    NSDictionary *attributes = @{NSFontAttributeName:label.font, NSParagraphStyleAttributeName:paragraphStyle.copy};
+    
+    
+//    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:label.text];
+//    NSRange allRange = [label.text rangeOfString:label.text];
+//    [attrStr addAttribute:NSFontAttributeName
+//                    value:[UIFont systemFontOfSize:label.font.pointSize]
+//                    range:allRange];
+//    [attrStr addAttribute:NSForegroundColorAttributeName
+//                    value:[UIColor blackColor]
+//                    range:allRange];
+//    
+    CGSize size=CGSizeMake(label.getWidth,MAXFLOAT);
+    size=[label.text boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    
+//    size=[label.text sizeWithFont:label.font constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
+    return CGRectMake(label.frame.origin.x,label.frame.origin.y,size.width,size.height);
+}
+
 +(BOOL)isEmptyWithArray:(NSArray *)ar{
     if([ar isKindOfClass:NSNull.class])
         return YES;
@@ -93,6 +133,17 @@
 +(long)getNowTime
 {
     return time(NULL);
+}
+
++(UIViewController*)getViewCtrollerByView:(UIView*)view
+{
+    for (UIView* next = [view superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
 }
 
 @end

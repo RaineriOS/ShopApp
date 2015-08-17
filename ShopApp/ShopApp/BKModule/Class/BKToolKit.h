@@ -54,6 +54,16 @@
  */
 + (BOOL)isEmptyWithDict:(NSDictionary *)dict;
 
+/**
+ @description 自适应文本的高度
+ @param fontSize 字体的大小
+ @param text 文字
+ @param weight 宽度
+ @return 自适应label的size
+ 
+ */
++(CGSize)getAutoSizeWithFontSize:(double)fontSize andText:(NSString *)text andWeight:(double)weight;
++(CGRect)getLabelAutoWeightByLabel:(UILabel*)label;
 
 +(NSString *)getSandBoxPath;
 
@@ -62,4 +72,13 @@
 +(NSString*)formatterTime:(long)time;
 
 +(long)getNowTime;
+
+/**
+ @description 通过view获取view上的controller
+ 
+ @param view 视图
+ 
+ */
++(UIViewController*)getViewCtrollerByView:(UIView*)view;
+
 @end

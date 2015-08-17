@@ -65,6 +65,11 @@
 		50B31A6F1B78AE7200FFBB2B /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A6E1B78AE7200FFBB2B /* PanViewController.m */; };
 		50B31A721B79794400FFBB2B /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A711B79794400FFBB2B /* LeftViewController.m */; };
 		50B31A761B797E1700FFBB2B /* GoodsDetilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */; };
+		50F8D0251B818BDC008248FC /* PurchaseSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D0241B818BDC008248FC /* PurchaseSuccessViewController.m */; };
+		50F8D0291B81B7C9008248FC /* ShopingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D0281B81B7C9008248FC /* ShopingCartViewController.m */; };
+		50F8D02D1B81B877008248FC /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D02C1B81B877008248FC /* LoginModel.m */; };
+		50F8D0311B81C79C008248FC /* MoerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D0301B81C79C008248FC /* MoerViewController.m */; };
+		50F8D0351B81C91D008248FC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D0341B81C91D008248FC /* LoginViewController.m */; };
 		50FBDC1C1B7893DF001800DF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDC1B1B7893DF001800DF /* HomeViewController.m */; };
 		50FBDC1F1B78941F001800DF /* GoodsPSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDC1E1B78941F001800DF /* GoodsPSCell.m */; };
 /* End PBXBuildFile section */
@@ -197,6 +202,16 @@
 		50B31A711B79794400FFBB2B /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		50B31A741B797E1700FFBB2B /* GoodsDetilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetilViewController.h; sourceTree = "<group>"; };
 		50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetilViewController.m; sourceTree = "<group>"; };
+		50F8D0231B818BDC008248FC /* PurchaseSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseSuccessViewController.h; sourceTree = "<group>"; };
+		50F8D0241B818BDC008248FC /* PurchaseSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseSuccessViewController.m; sourceTree = "<group>"; };
+		50F8D0271B81B7C9008248FC /* ShopingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopingCartViewController.h; sourceTree = "<group>"; };
+		50F8D0281B81B7C9008248FC /* ShopingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopingCartViewController.m; sourceTree = "<group>"; };
+		50F8D02B1B81B877008248FC /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		50F8D02C1B81B877008248FC /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		50F8D02F1B81C79C008248FC /* MoerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoerViewController.h; sourceTree = "<group>"; };
+		50F8D0301B81C79C008248FC /* MoerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoerViewController.m; sourceTree = "<group>"; };
+		50F8D0331B81C91D008248FC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		50F8D0341B81C91D008248FC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		50FBDC1A1B7893DF001800DF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		50FBDC1B1B7893DF001800DF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		50FBDC1D1B78941F001800DF /* GoodsPSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsPSCell.h; sourceTree = "<group>"; };
@@ -243,6 +258,7 @@
 		50A49AAB1B784E350065B182 /* ShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				50F8D02A1B81B857008248FC /* Model */,
 				50A49EFE1B787F6B0065B182 /* framework */,
 				50A49F051B7886440065B182 /* Views */,
 				50A49AB01B784E350065B182 /* AppDelegate.h */,
@@ -497,6 +513,9 @@
 		50A49F051B7886440065B182 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50F8D0321B81C914008248FC /* Login */,
+				50F8D02E1B81C790008248FC /* Moer */,
+				50F8D0261B81B7BD008248FC /* ShopingCart */,
 				50B31A731B797E0800FFBB2B /* Detil */,
 				50FBDC191B7893DF001800DF /* Home */,
 			);
@@ -532,8 +551,46 @@
 			children = (
 				50B31A741B797E1700FFBB2B /* GoodsDetilViewController.h */,
 				50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */,
+				50F8D0231B818BDC008248FC /* PurchaseSuccessViewController.h */,
+				50F8D0241B818BDC008248FC /* PurchaseSuccessViewController.m */,
 			);
 			path = Detil;
+			sourceTree = "<group>";
+		};
+		50F8D0261B81B7BD008248FC /* ShopingCart */ = {
+			isa = PBXGroup;
+			children = (
+				50F8D0271B81B7C9008248FC /* ShopingCartViewController.h */,
+				50F8D0281B81B7C9008248FC /* ShopingCartViewController.m */,
+			);
+			path = ShopingCart;
+			sourceTree = "<group>";
+		};
+		50F8D02A1B81B857008248FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50F8D02B1B81B877008248FC /* LoginModel.h */,
+				50F8D02C1B81B877008248FC /* LoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50F8D02E1B81C790008248FC /* Moer */ = {
+			isa = PBXGroup;
+			children = (
+				50F8D02F1B81C79C008248FC /* MoerViewController.h */,
+				50F8D0301B81C79C008248FC /* MoerViewController.m */,
+			);
+			path = Moer;
+			sourceTree = "<group>";
+		};
+		50F8D0321B81C914008248FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				50F8D0331B81C91D008248FC /* LoginViewController.h */,
+				50F8D0341B81C91D008248FC /* LoginViewController.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		50FBDC191B7893DF001800DF /* Home */ = {
@@ -656,15 +713,18 @@
 				50A49EDF1B787DEC0065B182 /* ASIDataDecompressor.m in Sources */,
 				50A49EF61B787DEC0065B182 /* UIImageView+WebCache.m in Sources */,
 				50A49ED21B787DEC0065B182 /* BKHttpRequest.m in Sources */,
+				50F8D0251B818BDC008248FC /* PurchaseSuccessViewController.m in Sources */,
 				50A49EDE1B787DEC0065B182 /* ASIDataCompressor.m in Sources */,
 				50A49EEC1B787DEC0065B182 /* SDWebImageDownloader.m in Sources */,
 				50A49ED41B787DEC0065B182 /* NSObject+Helper.m in Sources */,
 				50A49EEE1B787DEC0065B182 /* SDWebImageManager+MJ.m in Sources */,
+				50F8D0311B81C79C008248FC /* MoerViewController.m in Sources */,
 				50A49EF11B787DEC0065B182 /* UIButton+WebCache.m in Sources */,
 				50A49EF01B787DEC0065B182 /* SDWebImagePrefetcher.m in Sources */,
 				50A49EEA1B787DEC0065B182 /* SDWebImageCompat.m in Sources */,
 				50A49F121B788D5D0065B182 /* PSCollectionViewCell.m in Sources */,
 				50A49F111B788D5D0065B182 /* PSCollectionView.m in Sources */,
+				50F8D02D1B81B877008248FC /* LoginModel.m in Sources */,
 				50A49ED61B787DEC0065B182 /* UIView+Helper.m in Sources */,
 				50A49EE11B787DEC0065B182 /* ASIFormDataRequest.m in Sources */,
 				50B31A721B79794400FFBB2B /* LeftViewController.m in Sources */,
@@ -676,6 +736,7 @@
 				50A49ECF1B787DEC0065B182 /* BKBaseViewController.m in Sources */,
 				50A49EE91B787DEC0065B182 /* SDImageCache.m in Sources */,
 				50A49EE61B787DEC0065B182 /* Reachability.m in Sources */,
+				50F8D0291B81B7C9008248FC /* ShopingCartViewController.m in Sources */,
 				50A49EF21B787DEC0065B182 /* UIImage+GIF.m in Sources */,
 				50B31A6F1B78AE7200FFBB2B /* PanViewController.m in Sources */,
 				50FBDC1C1B7893DF001800DF /* HomeViewController.m in Sources */,
@@ -701,6 +762,7 @@
 				509A90C11B7B337700D6F5BB /* BKNavigationCtr.m in Sources */,
 				50A49EE51B787DEC0065B182 /* XLog.m in Sources */,
 				50A49F131B788D5D0065B182 /* README.md in Sources */,
+				50F8D0351B81C91D008248FC /* LoginViewController.m in Sources */,
 				50A49EE71B787DEC0065B182 /* MKAnnotationView+WebCache.m in Sources */,
 				50B31A761B797E1700FFBB2B /* GoodsDetilViewController.m in Sources */,
 				50A49EE31B787DEC0065B182 /* ASIInputStream.m in Sources */,
@@ -829,6 +891,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "ShopApp/ShopApp-prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -847,6 +910,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "ShopApp/ShopApp-prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

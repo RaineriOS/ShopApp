@@ -15,8 +15,8 @@
 {
     CGPoint point;
     double fontSize=15.0f;
-//    CGSize textSize=[ZHSToolKit getAutoSizeWithFontSize:fontSize andText:msg andWeight:270];
-    CGSize textSize=CGSizeZero;
+    CGSize textSize=[BKToolKit getAutoSizeWithFontSize:fontSize andText:msg andWeight:270];
+//    CGSize textSize=CGSizeZero;
 
     switch (pointType) {
         case PointTypeTop:
