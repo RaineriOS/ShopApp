@@ -8,6 +8,11 @@
 
 #import "BKBaseViewController.h"
 
+@interface BKBaseViewController ()<UIGestureRecognizerDelegate>
+
+
+@end
+
 @implementation BKBaseViewController
 
 
@@ -18,18 +23,38 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
 #endif
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;//关闭自动布局
+    
+//    self.view.translatesAutoresizingMaskIntoConstraints = NO;//关闭自动布局
+    /**
+     设置为NO之后，没有添加隐含constraint，而代码添加的constraint又不足以确定self.view的位置和大小，所以self.view无法显示;
+     
+     
+     */
 
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+    }
 }
 
 -(void)registerFrameworkNotification
