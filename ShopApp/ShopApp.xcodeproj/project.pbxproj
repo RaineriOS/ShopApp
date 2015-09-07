@@ -22,6 +22,7 @@
 		503685991B93FE2300B6E64D /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5036858C1B93FE2300B6E64D /* View+MASAdditions.m */; };
 		5036859A1B93FE2300B6E64D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5036858F1B93FE2300B6E64D /* ViewController+MASAdditions.m */; };
 		504244BC1B940136009A7045 /* GoodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504244BB1B940136009A7045 /* GoodsListViewController.m */; };
+		505C74801B9D2C1100CF5662 /* GoodsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C747F1B9D2C1100CF5662 /* GoodsListCell.m */; };
 		509A90C11B7B337700D6F5BB /* BKNavigationCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 509A90C01B7B337700D6F5BB /* BKNavigationCtr.m */; };
 		50A49AAF1B784E350065B182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49AAE1B784E350065B182 /* main.m */; };
 		50A49AB21B784E350065B182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49AB11B784E350065B182 /* AppDelegate.m */; };
@@ -145,6 +146,8 @@
 		5036858F1B93FE2300B6E64D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		504244BA1B940136009A7045 /* GoodsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsListViewController.h; sourceTree = "<group>"; };
 		504244BB1B940136009A7045 /* GoodsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsListViewController.m; sourceTree = "<group>"; };
+		505C747E1B9D2C1100CF5662 /* GoodsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsListCell.h; sourceTree = "<group>"; };
+		505C747F1B9D2C1100CF5662 /* GoodsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsListCell.m; sourceTree = "<group>"; };
 		509A90BF1B7B337700D6F5BB /* BKNavigationCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKNavigationCtr.h; sourceTree = "<group>"; };
 		509A90C01B7B337700D6F5BB /* BKNavigationCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKNavigationCtr.m; sourceTree = "<group>"; };
 		50A49AA91B784E350065B182 /* ShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,6 +388,8 @@
 			children = (
 				504244BA1B940136009A7045 /* GoodsListViewController.h */,
 				504244BB1B940136009A7045 /* GoodsListViewController.m */,
+				505C747E1B9D2C1100CF5662 /* GoodsListCell.h */,
+				505C747F1B9D2C1100CF5662 /* GoodsListCell.m */,
 			);
 			path = GoodsList;
 			sourceTree = "<group>";
@@ -963,6 +968,7 @@
 				50A49EE81B787DEC0065B182 /* NSData+ImageContentType.m in Sources */,
 				50A49EE01B787DEC0065B182 /* ASIDownloadCache.m in Sources */,
 				50A49EF41B787DEC0065B182 /* UIImage+WebP.m in Sources */,
+				505C74801B9D2C1100CF5662 /* GoodsListCell.m in Sources */,
 				503685921B93FE2300B6E64D /* MASConstraint.m in Sources */,
 				50A49AB21B784E350065B182 /* AppDelegate.m in Sources */,
 				50A49EEB1B787DEC0065B182 /* SDWebImageDecoder.m in Sources */,

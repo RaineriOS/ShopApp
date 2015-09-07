@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DCB72C92-386F-4055-8CFD-794DA14B7EBE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ShopApp</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C28A0D89CE29CAC4F3AD65F68FE71D748CDCE6B6</key>
 		<string>https://github.com/devkiang/ShopApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ShopApp/ShopApp.xcodeproj</string>
+	<string>ShopApp/ShopApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C28A0D89CE29CAC4F3AD65F68FE71D748CDCE6B6</key>

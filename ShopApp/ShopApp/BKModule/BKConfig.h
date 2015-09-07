@@ -32,6 +32,7 @@
 //custom
 #define BaseUrl @"http://localhost:8080/SmokeAppServer/appAction.action"
 
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 #define BKDeviceWidth ([UIScreen mainScreen].bounds.size.width)
 #define BKDeviceHeight ([UIScreen mainScreen].bounds.size.height-StatusBarHeight)
 #ifdef DEBUG
@@ -41,6 +42,7 @@
 #endif
 //释放对象的宏定义
 #define RELEASE(obj){}        if(obj)obj=nil;
+#define bif(obj) if(!obj)
 //释放对象的宏定义
 //#define RELEASE(obj){} [obj release];
 
