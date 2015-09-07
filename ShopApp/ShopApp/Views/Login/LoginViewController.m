@@ -1,10 +1,10 @@
-//
-//  LoginViewController.m
-//  ShopApp
-//
-//  Created by shikee_app03 on 15/8/17.
-//  Copyright (c) 2015年 shikee_app03. All rights reserved.
-//
+/**
+ ==================================================
+ 描述:登录页面
+ 开发:BigKiang
+ 时间:2015-08-18 11:45:34
+ ==================================================
+ */
 
 #import "LoginViewController.h"
 
@@ -45,7 +45,6 @@
 #pragma mark- SystemDeleagate
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

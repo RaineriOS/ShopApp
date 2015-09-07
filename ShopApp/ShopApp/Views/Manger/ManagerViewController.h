@@ -1,13 +1,13 @@
 /**
  ==================================================
- 描述:登录页面
+ 描述:管理员界面
  开发:BigKiang
- 时间:2015-08-18 11:45:34
+ 时间:2015-08-26 13:52:07
  ==================================================
  */
 
-#import "BKBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface LoginViewController : BKBaseViewController
+@interface ManagerViewController : BKBaseViewController
 
 @end

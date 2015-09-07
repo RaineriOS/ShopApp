@@ -116,7 +116,6 @@
     }else if([cellTitle isEqualToString:@"购物车"]){
         ShopingCartViewController *vc=[[ShopingCartViewController alloc]init];
         [self push:vc];
-//        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

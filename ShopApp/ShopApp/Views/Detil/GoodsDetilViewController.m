@@ -13,23 +13,24 @@
 
 
 @property(nonatomic,strong) BKNavigationBar *titleBar;//标题
-@property(nonatomic,strong) UIScrollView *imagesScrollView;//图片滚动视图
-@property(nonatomic,strong) UIView *goodsNameView;//商品名视图
-@property(nonatomic,strong) UIView *mainView;//主要视图
-@property(nonatomic,strong) UIView *footerView;//页脚
-@property(nonatomic,strong) UIButton *tradeButton;//购买按钮
-@property(nonatomic,strong) UILabel *priceLabel;
-@property(nonatomic,strong) UILabel *originalPriceLabel;
-@property(nonatomic,strong) UILabel *browseNumberLabel;//浏览次数
-@property(nonatomic,strong) UILabel *surplusNumberLabel;//剩余份数
-@property(nonatomic,strong) UIButton *collectionBtn;//收藏按钮
-@property(nonatomic,strong) UIButton *commentBtn;//评论按钮
-@property(nonatomic,strong) UIButton *shareBtn;//分享按钮
-@property(nonatomic,strong) UIView *tableHeaderView;
-@property(nonatomic,strong) UITableView *tableView;
-@property(nonatomic,strong) UILabel *synopsisLabel;//简介
+@property(nonatomic,strong) UIScrollView    *imagesScrollView;//图片滚动视图
+@property(nonatomic,strong) UIView          *goodsNameView;//商品名视图
+@property(nonatomic,strong) UIView          *mainView;//主要视图
+@property(nonatomic,strong) UIView          *footerView;//页脚
+@property(nonatomic,strong) UIButton        *tradeButton;//购买按钮
+@property(nonatomic,strong) UILabel         *priceLabel;
+@property(nonatomic,strong) UILabel         *originalPriceLabel;
+@property(nonatomic,strong) UILabel         *browseNumberLabel;//浏览次数
+@property(nonatomic,strong) UILabel         *surplusNumberLabel;//剩余份数
+@property(nonatomic,strong) UIButton        *collectionBtn;//收藏按钮
+@property(nonatomic,strong) UIButton        *commentBtn;//评论按钮
+@property(nonatomic,strong) UIButton        *shareBtn;//分享按钮
+@property(nonatomic,strong) UIView          *tableHeaderView;
+@property(nonatomic,strong) UITableView     *tableView;
+@property(nonatomic,strong) UILabel         *synopsisLabel;//简介
 
-@property(nonatomic,strong) NSMutableArray *imagesData;
+@property(nonatomic,strong) NSMutableArray  *imagesData;
+
 @end
 
 @implementation GoodsDetilViewController
@@ -38,6 +39,7 @@
 #pragma mark- ViewDidLoad
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.view addSubview:self.titleBar];
     [self.tableHeaderView addSubview:self.imagesScrollView];
     UILabel *goodsNameLabel=(UILabel*)[self.goodsNameView viewWithTag:1001];
@@ -60,6 +62,12 @@
     [self.view addSubview:self.footerView];
     [self.view setBackgroundColor:COLOR_BG];
     [self setImages:self.imagesData];
+}
+
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 
 
