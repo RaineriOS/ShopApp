@@ -36,6 +36,11 @@ typedef enum
     UIViewController *_leftViewCtr;
 }
 @property(nonatomic,assign) id<PanDelegate> panDelegate;
+/**
+ 
+ 被划开的界面恢复初始状态
+ 
+ */
 -(void)reset;
 -(void)setLeftViewController:(UIViewController *)ctr withDelegate:(id)___delegate;
 -(UIViewController *)getLeftViewController;

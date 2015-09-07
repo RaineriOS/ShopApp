@@ -21,10 +21,16 @@
 #import "NZLabel.h"
 #import "UICustomLineLabel.h"
 #import "UIImageView+WebCache.h"
+#import "BKHttpRequest.h"
+#import "Masonry.h"
 
 // custom
 
 #import "LoginModel.h"
+#import "LoadingView.h"
+
+//custom
+#define BaseUrl @"http://localhost:8080/SmokeAppServer/appAction.action"
 
 #define BKDeviceWidth ([UIScreen mainScreen].bounds.size.width)
 #define BKDeviceHeight ([UIScreen mainScreen].bounds.size.height-StatusBarHeight)

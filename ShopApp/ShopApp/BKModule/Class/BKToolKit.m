@@ -146,4 +146,15 @@
     return nil;
 }
 
++(NSString *)formatRequestParamToString:(NSDictionary *)params
+{
+    NSString *newParamsStr=@"";
+    for (NSString *key in params.allKeys) {
+        newParamsStr=[NSString stringWithFormat:@"%@&%@=%@",newParamsStr,key,[params objectForKey:key]];
+        //action=xx&name=xxx   ""&name=xxx
+    }
+    newParamsStr=[newParamsStr substringFromIndex:1];
+    return newParamsStr;
+}
+
 @end

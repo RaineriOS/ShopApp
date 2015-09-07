@@ -81,4 +81,6 @@
  */
 +(UIViewController*)getViewCtrollerByView:(UIView*)view;
 
++(NSString *)formatRequestParamToString:(NSDictionary *)params;
+
 @end

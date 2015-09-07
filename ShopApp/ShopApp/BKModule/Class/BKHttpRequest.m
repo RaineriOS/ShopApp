@@ -85,7 +85,8 @@ static NSMutableArray* _allRequest;
     }];
     
     [request setFailedBlock:^{
-        ALERT_SHOW(@"傻逼");
+        ALERT_SHOW([[requestCopy error]description]);
+        
     }];
     if(isQueue){
         if(!_queue){
