@@ -8,6 +8,7 @@
 
 #import "ManagerViewController.h"
 #import "MenuManagerViewController.h"
+#import "PasswordMangerViewController.h"
 
 @interface ManagerViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -87,13 +88,13 @@
             NSDictionary *params=@{
                                    @"action":@"managerAction",
                                    @"method":@"addGoods",
-                                   @"name":@"测试啊啊——啊坟蛋安哥安哥",
+                                   @"name":@"南宁正宗三黄鸡",
                                    @"price":@"12.30",
                                    @"vipPrice":@"10.30",
-                                   @"synopsis":@"曾经爱过看垃圾啊开回来就快了-暗黑就快了-啊后两节课-哈喽就",
+                                   @"synopsis":@"全身羽毛黄色密布，公鸡颈羽呈金黄色，主翼羽红夹杂黑色，尾羽为黑色，母鸡主翼羽半黄半黑，尾羽为黑色，颈羽夹杂斑点状黑灰色羽毛。喙为黄色，单冠，公鸡冠较高，冠齿5～7个。",
                                    @"browseNumber":@"10",
                                    @"synopsis":@"20",
-                                   @"imageUrls":@"http://fanyi.baidu.com/static/i18n/zh/widget/translate/head/logo/logo_16ea8bb7.png,http://fanyi.baidu.com/static/i18n/zh/widget/translate/head/logo/logo_16ea8bb7.png"
+                                   @"imageUrls":@"http://images.meishij.net/p/20110926/a87921f1de1dcfa427659ff5c0e64efe_180x180.jpg,http://images.meishij.net/p/20100729/5a7efef14add14eec8440b4be32f3562_150x150.jpg"
                                    };
             NSString *paramsStr=[BKToolKit formatRequestParamToString:params];
             [[BKHttpRequest shared]sendPostRequest:@{@"key":paramsStr} url:BaseUrl success:^(NSDictionary *response) {
@@ -116,7 +117,8 @@
         case 3:
         {
             
-            ALERT_SHOW(@"密码管理");
+//            ALERT_SHOW(@"密码管理");
+            
         }
             break;
         default:

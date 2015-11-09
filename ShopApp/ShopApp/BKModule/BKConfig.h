@@ -69,6 +69,6 @@
 #define COLOR_HS          UIColorFromRGB(0x999999)  //灰色
 #define COLOR_BG          UIColorFromRGB(0xfaf7f7)  //灰色
 #define COLOR_BTNHS       UIColorFromRGB(0x666666)   //按钮灰
-#define COLOR_BTN  COLOR__RED
-#define SDIMGOption                 SDWebImageRetryFailed|SDWebImageLowPriority|SDWebImageRefreshCached
+#define COLOR_BTN         COLOR__RED
+#define SDIMGOption       SDWebImageRetryFailed|SDWebImageLowPriority|SDWebImageRefreshCached
 #endif

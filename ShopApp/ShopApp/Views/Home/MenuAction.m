@@ -19,6 +19,23 @@
     if([BKToolKit isEmptyWithStr:actionID]){
         GoodsListViewController *vc=[[GoodsListViewController alloc]init];
         [navCtr pushViewController:vc animated:YES];
+        //@"action":@"homeAction",@"method":@"getMenus"
+        NSString *paramStr=[BKToolKit formatRequestParamToString:@{
+                                                                   @"action":@"goodsAction",
+                                                                   @"method":@"getGoodsListWithType",
+                                                                   @"type":@"GoodsListTypeRecommend"
+                                                                   
+                                                                   }];
+        
+        NSDictionary *param=@{@"key":paramStr};
+        [[BKHttpRequest shared]sendPostRequest:param url:BaseUrl success:^(NSDictionary *response) {
+            NSInteger code=[[response objectForKey:@"code"] integerValue];
+            if(code<0){
+                ALERT_SHOW([response objectForKey:@"msg"]);
+            }else {
+                ALERT_SHOW(@"~");
+            }
+        }];
         
 //        ALERT_SHOW(@"操作异常");
         return;

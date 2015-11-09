@@ -46,6 +46,7 @@
 - (void)collectionView:(PSCollectionView *)collectionView didSelectCell:(PSCollectionViewCell *)cell atIndex:(NSInteger)index
 {
     GoodsDetilViewController *vc=[[GoodsDetilViewController alloc]init];
+    vc.goodsId=[[[self.collectionData objectAtIndex:index] objectForKey:@"gid"] toString];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

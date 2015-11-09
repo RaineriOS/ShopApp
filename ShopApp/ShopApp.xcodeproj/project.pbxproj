@@ -23,6 +23,7 @@
 		5036859A1B93FE2300B6E64D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5036858F1B93FE2300B6E64D /* ViewController+MASAdditions.m */; };
 		504244BC1B940136009A7045 /* GoodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504244BB1B940136009A7045 /* GoodsListViewController.m */; };
 		505C74801B9D2C1100CF5662 /* GoodsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C747F1B9D2C1100CF5662 /* GoodsListCell.m */; };
+		506D3F491BA699A6009D8A07 /* PasswordMangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D3F481BA699A6009D8A07 /* PasswordMangerViewController.m */; };
 		509A90C11B7B337700D6F5BB /* BKNavigationCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 509A90C01B7B337700D6F5BB /* BKNavigationCtr.m */; };
 		50A49AAF1B784E350065B182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49AAE1B784E350065B182 /* main.m */; };
 		50A49AB21B784E350065B182 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A49AB11B784E350065B182 /* AppDelegate.m */; };
@@ -81,6 +82,8 @@
 		50B31A6F1B78AE7200FFBB2B /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A6E1B78AE7200FFBB2B /* PanViewController.m */; };
 		50B31A721B79794400FFBB2B /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A711B79794400FFBB2B /* LeftViewController.m */; };
 		50B31A761B797E1700FFBB2B /* GoodsDetilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */; };
+		50C8C7441B9D6FAC003F3634 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C8C7431B9D6FAC003F3634 /* CommentCell.m */; };
+		50C8C7471B9EB800003F3634 /* KeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C8C7461B9EB800003F3634 /* KeyboardHelper.m */; };
 		50F8D0251B818BDC008248FC /* PurchaseSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D0241B818BDC008248FC /* PurchaseSuccessViewController.m */; };
 		50F8D0291B81B7C9008248FC /* ShopingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D0281B81B7C9008248FC /* ShopingCartViewController.m */; };
 		50F8D02D1B81B877008248FC /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F8D02C1B81B877008248FC /* LoginModel.m */; };
@@ -148,6 +151,8 @@
 		504244BB1B940136009A7045 /* GoodsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsListViewController.m; sourceTree = "<group>"; };
 		505C747E1B9D2C1100CF5662 /* GoodsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsListCell.h; sourceTree = "<group>"; };
 		505C747F1B9D2C1100CF5662 /* GoodsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsListCell.m; sourceTree = "<group>"; };
+		506D3F471BA699A6009D8A07 /* PasswordMangerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordMangerViewController.h; sourceTree = "<group>"; };
+		506D3F481BA699A6009D8A07 /* PasswordMangerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordMangerViewController.m; sourceTree = "<group>"; };
 		509A90BF1B7B337700D6F5BB /* BKNavigationCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKNavigationCtr.h; sourceTree = "<group>"; };
 		509A90C01B7B337700D6F5BB /* BKNavigationCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKNavigationCtr.m; sourceTree = "<group>"; };
 		50A49AA91B784E350065B182 /* ShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +270,10 @@
 		50B31A711B79794400FFBB2B /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		50B31A741B797E1700FFBB2B /* GoodsDetilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetilViewController.h; sourceTree = "<group>"; };
 		50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetilViewController.m; sourceTree = "<group>"; };
+		50C8C7421B9D6FAC003F3634 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		50C8C7431B9D6FAC003F3634 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		50C8C7451B9EB800003F3634 /* KeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardHelper.h; sourceTree = "<group>"; };
+		50C8C7461B9EB800003F3634 /* KeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardHelper.m; sourceTree = "<group>"; };
 		50F8D0231B818BDC008248FC /* PurchaseSuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseSuccessViewController.h; sourceTree = "<group>"; };
 		50F8D0241B818BDC008248FC /* PurchaseSuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseSuccessViewController.m; sourceTree = "<group>"; };
 		50F8D0271B81B7C9008248FC /* ShopingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopingCartViewController.h; sourceTree = "<group>"; };
@@ -327,6 +336,8 @@
 				503685641B8E99AC00B6E64D /* MenuManger */,
 				503685611B8D8B6D00B6E64D /* ManagerViewController.h */,
 				503685621B8D8B6D00B6E64D /* ManagerViewController.m */,
+				506D3F471BA699A6009D8A07 /* PasswordMangerViewController.h */,
+				506D3F481BA699A6009D8A07 /* PasswordMangerViewController.m */,
 			);
 			path = Manger;
 			sourceTree = "<group>";
@@ -506,6 +517,8 @@
 				50A49E751B787DEC0065B182 /* Category */,
 				50A49E7C1B787DEC0065B182 /* Socket */,
 				50A49E7F1B787DEC0065B182 /* Style */,
+				50C8C7451B9EB800003F3634 /* KeyboardHelper.h */,
+				50C8C7461B9EB800003F3634 /* KeyboardHelper.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -715,6 +728,8 @@
 				50B31A751B797E1700FFBB2B /* GoodsDetilViewController.m */,
 				50F8D0231B818BDC008248FC /* PurchaseSuccessViewController.h */,
 				50F8D0241B818BDC008248FC /* PurchaseSuccessViewController.m */,
+				50C8C7421B9D6FAC003F3634 /* CommentCell.h */,
+				50C8C7431B9D6FAC003F3634 /* CommentCell.m */,
 			);
 			path = Detil;
 			sourceTree = "<group>";
@@ -912,8 +927,10 @@
 				503685961B93FE2300B6E64D /* MASViewConstraint.m in Sources */,
 				50A49EF61B787DEC0065B182 /* UIImageView+WebCache.m in Sources */,
 				50A49ED21B787DEC0065B182 /* BKHttpRequest.m in Sources */,
+				506D3F491BA699A6009D8A07 /* PasswordMangerViewController.m in Sources */,
 				50F8D0251B818BDC008248FC /* PurchaseSuccessViewController.m in Sources */,
 				503685911B93FE2300B6E64D /* MASCompositeConstraint.m in Sources */,
+				50C8C7471B9EB800003F3634 /* KeyboardHelper.m in Sources */,
 				50A49EDE1B787DEC0065B182 /* ASIDataCompressor.m in Sources */,
 				50A49EEC1B787DEC0065B182 /* SDWebImageDownloader.m in Sources */,
 				50F8D0661B8AEFF1008248FC /* UIScrollView+MJRefresh.m in Sources */,
@@ -926,6 +943,7 @@
 				50A49EF11B787DEC0065B182 /* UIButton+WebCache.m in Sources */,
 				5036856A1B8EA49D00B6E64D /* AddMenuViewController.m in Sources */,
 				50A49EF01B787DEC0065B182 /* SDWebImagePrefetcher.m in Sources */,
+				50C8C7441B9D6FAC003F3634 /* CommentCell.m in Sources */,
 				50A49EEA1B787DEC0065B182 /* SDWebImageCompat.m in Sources */,
 				50A49F121B788D5D0065B182 /* PSCollectionViewCell.m in Sources */,
 				50A49F111B788D5D0065B182 /* PSCollectionView.m in Sources */,
@@ -1113,7 +1131,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "ShopApp/ShopApp-prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1132,7 +1149,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "ShopApp/ShopApp-prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

@@ -32,6 +32,7 @@
     self.window.rootViewController=navCtr;
     LeftViewController *leftVc=[[LeftViewController alloc]init];
     [navCtr setLeftViewController:leftVc withDelegate:leftVc];
+    BKLog(@"%f",BKDeviceWidth);
     return YES;
 }
 

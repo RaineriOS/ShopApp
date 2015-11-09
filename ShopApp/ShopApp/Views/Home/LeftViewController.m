@@ -60,6 +60,9 @@
 }
 
 
+
+
+
 #pragma mark- ViewDelegate
 -(void)moveWithX:(double)x andMaxMoveX:(double)maxMoveX andAnima:(BOOL)anima
 {
@@ -199,6 +202,7 @@
       btn2.backgroundColor=[UIColor clearColor];
       btn2.titleLabel.font=[UIFont systemFontOfSize:20];
       [btn2 setTitle:@"反馈" forState:0];
+      [btn2 addTarget:self action:@selector(btn2Action:) forControlEvents:UIControlEventTouchUpInside];
       [_menuFooterView addSubview:btn2];
       
       

@@ -40,6 +40,8 @@
     return self;
 }
 
+
+#pragma mark- PrivatMethod
 -(void)constrainInit
 {
     [self.goodsImageView mas_makeConstraints:^(MASConstraintMaker *make) {
